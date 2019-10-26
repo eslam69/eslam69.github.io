@@ -1,9 +1,9 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Eslam Khaled
+bio: Welcome to the dark side of the internet
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A blog about Machine learning and stuff related
 
 # if it's an external image, update below for true
 # better with square images
@@ -14,9 +14,9 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://drive.google.com/file/d/1HoWLJZvdzr0sP49f9LWueKZpJjnFIZ0l/view?usp=sharing    
 
-url: https://koppl.in/indigo
+url: https://eslam69.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -29,29 +29,29 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+#disqus:
+#shortname: mydisqus # enter this from your disqus account
+#categories: [, ] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+facebook: Islam.khaled.07
+#twitter: mytwitter
 # google: mygoogle
-# instagram: myinstagram
+instagram: eslamkhaled707
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: eslam69
 # youtube: myyoutube
-# spotify: myspotify
-github: mygithub
+spotify: eslamkhaled64
+github: eslam69
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+#medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: eslamkhaled64@gmail.com
 
 authors:
     johndoe:
