@@ -53,13 +53,13 @@ github: eslam69
 # lanyrd: mylanyrd
 email: eslamkhaled64@gmail.com
 
-authors:
-    Eslam Khaled:
-        name: Eslam Kaled
-        bio: A thalassophbic who beleives in conspiracy theory
-        external-image: false
-        picture: assets/images/profile.jpg
-        facebook: Islam.khaled.07
+#authors:
+ #   Eslam Khaled:
+  #      name: Eslam Kaled
+   #     bio: A thalassophbic who beleives in conspiracy theory
+    #    external-image: false
+     #   picture: assets/images/profile.jpg
+      #  facebook: Islam.khaled.07
     
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -90,7 +90,7 @@ related: true
 post-advance-links: [blog]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
 animation: true
