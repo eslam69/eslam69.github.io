@@ -1,6 +1,6 @@
 ---
 title: "A classification model for thyroid disease prediction"
-layout: page
+layout: post
 
 image: https://image.flaticon.com/icons/png/128/1397/1397656.png
 
