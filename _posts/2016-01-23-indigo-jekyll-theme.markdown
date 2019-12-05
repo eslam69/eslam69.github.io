@@ -19,7 +19,8 @@ externalLink: false
 
 - [Introduction](#Introduction)
 - [Motivation](#Motivation)
-- [What's inside](#What's inside)
+- [What's inside?](#What's inside?)
+- [Data](#Data)
 - [Exploratory data analysis (EDA)](#Exploratory dataanalysis (EDA))
 - [Contributing](#contributing)
 - [Creators](#creators)
@@ -36,7 +37,7 @@ As thyroid functions affects every essential organ in the body so identifying th
 ## Motivation
 
 Thyroid disease's symptoms are very common in our daily life, almost everyone can have a symptom or two as tiredness, unexplained weight gain, depressed mood, memory difficulty and a lot more so we were so curious to know more about it and how we can detect it using the statistics given, We have great enthusiasm for this project because it meets our research interests and will provide us a great opportunity to learn new skills 
-## What's inside ?
+##What's inside
 In this article we will discuss about 3 different classification methods :
 * **K- Nearest Neighbourhood**
 * **Decision Trees**
@@ -45,6 +46,7 @@ We will apply these methods on the dataset provided by Garavan Institute ,datase
 
 ## Data
 **Here is some information about the dataset**
+
 Type         | Classification
 ------------ | -------------
 Features   | 5
@@ -53,17 +55,33 @@ Missing values? |No
 Origin              |Real world
 (Real / Integer / Nominal) |(4 / 1 / 0)
 Classes                             |3
+
+**Attribute description**
+
+Attribute| Domain
+------------ | -------------
+T3resin |[65, 144]
+Thyroxin |[0.5, 25.3]
+Triiodothyronine |[0.2, 10.0]
+Thyroidstimulating |[0.1, 56.4]
+TSHvalue |[-0.7, 56.3]
+Class |3, 2, 1
+
 ## Exploratory dataanalysis (EDA) 
+let's visualize the our correlation matrix of the dataset which is an important concept to find the correlated attributes.  
+
+ ![](https://i.ibb.co/WnK5ZSc/Rplot.png)
+ 
+ 
+ And here we find that there is a semi-high correlation between **Thyroxin** and **Triiodothyronine**,
+ but, since our dataset only has 5 independent features, then there is no need for **feature selection**.
+ 
 
 
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
-
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 ## Creators
 
@@ -73,10 +91,8 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
 
 ## Thanks
 
-Some Text
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
 
 Enjoy :metal:
