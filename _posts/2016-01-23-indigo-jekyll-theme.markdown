@@ -10,7 +10,7 @@ hidden: false # don't count this post in blog pagination
 description: "this is a  Multiclass classification to predict whether a patient is normal  or suffers from hyperthyroidism  or hypothyroidism."
 category: project
 author: Eslam Khaled
-externalLink: false
+externalLink: true
 ---
 
 ![thyroid](https://www.nm.org//-/media/Northwestern/healthbeat/images/healthy-tips/nm-7-things-thyroid_preview.jpg)
