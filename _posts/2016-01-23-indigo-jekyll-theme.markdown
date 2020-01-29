@@ -10,6 +10,7 @@ hidden: false # don't count this post in blog pagination
 description: "this is a  Multiclass classification to predict whether a patient is normal  or suffers from hyperthyroidism  or hypothyroidism."
 category: project
 author: Eslam Khaled
+permalink: thyroid-disease-prediction
 externalLink: false
 ---
 
