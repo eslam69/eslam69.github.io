@@ -11,6 +11,7 @@ description: "this is a  Multiclass classification to predict whether a patient 
 category: project
 author: Eslam Khaled
 permalink: thyroid-disease-prediction
+published : true
 externalLink: false
 ---
 
