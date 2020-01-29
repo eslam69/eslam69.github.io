@@ -4,7 +4,7 @@ layout: post
 
 image: https://image.flaticon.com/icons/png/128/1397/1397656.png
 date: 2019-10-24 22:44
-headerImage: false
+headerImage: true
 projects: true
 hidden: false # don't count this post in blog pagination
 description: "this is a  Multiclass classification to predict whether a patient is normal  or suffers from hyperthyroidism  or hypothyroidism."
