@@ -6,7 +6,7 @@ image: https://image.flaticon.com/icons/png/128/1397/1397656.png
 
 headerImage: false
 projects: true
-hidden: true # don't count this post in blog pagination
+hidden: false # don't count this post in blog pagination
 description: "this is a  Multiclass classification to predict whether a patient is normal  or suffers from hyperthyroidism  or hypothyroidism."
 category: project
 author: Eslam Khaled
