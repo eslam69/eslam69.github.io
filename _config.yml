@@ -61,10 +61,10 @@ email: eslamkhaled64@gmail.com
       #  facebook: Islam.khaled.07
     
 # do you want a larger site? change the option below
- options: [normal, large] | default: large
+ options: [normal, large] | default: normal
  normal = 560px 
  large = 920px
- width: large
+ width: narmal
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
