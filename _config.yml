@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-#resume-external: true
+resume-external: true
 resume-url: https://drive.google.com/file/d/1RSSkLhZKg97machzOadwG2fHbFhwYSMm/view?usp=sharing
 url: https://eslam69.github.io
 your url: https://eslam69.github.io
@@ -30,7 +30,7 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-    shortname: mydisqus # enter this from your disqus account
+    shortname: disqus_IcTDnUXpak # enter this from your disqus account
     categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
@@ -64,7 +64,7 @@ email: eslamkhaled64@gmail.com
 # do you want a larger site? change the option below
  #options: [normal, large] | default: normal
  #normal = 560px 
- #large = 920px
+ large = 810px
  width: narmal
 
 # if you don't need pagination, comment the *paginate* configs below
@@ -79,7 +79,7 @@ about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
 show-tags: true
