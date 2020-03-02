@@ -1,5 +1,5 @@
 # main text of home
-name: Eslam Khaled
+name: Eslam.
 bio: A blog about Machine learning and stuff related
 # twitter summary info
 #description: A blog about Machine learning and stuff related
@@ -73,7 +73,7 @@ email: eslamkhaled64@gmail.com
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
