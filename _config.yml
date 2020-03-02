@@ -65,7 +65,7 @@ email: eslamkhaled64@gmail.com
  #options: [normal, large] | default: normal
  #normal = 560px 
  #large = 920px
- #width: narmal
+ width: narmal
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
