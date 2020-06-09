@@ -1,8 +1,5 @@
 # main text of home
 
-
-
-
 name: Eslam Khaled
 bio: A blog about Machine learning and stuff related
 # twitter summary info
@@ -16,10 +13,10 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
+# resume-external: true
 resume-url: https://drive.google.com/file/d/1RSSkLhZKg97machzOadwG2fHbFhwYSMm/view?usp=sharing
-#url: https://eslam69.github.io
-#your url: https://eslam69.github.io
+url: https://eslam69.github.io
+your url: https://eslam69.github.io
 
 permalink: /:title/
 
