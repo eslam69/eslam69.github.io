@@ -1,5 +1,5 @@
 # main text of home
-name: Eslam
+name: Eslam Khaled
 bio: A blog about Machine learning and stuff related
 # twitter summary info
 #description: A blog about Machine learning and stuff related
@@ -15,7 +15,7 @@ resume: true
 resume-external: true
 resume-url: https://drive.google.com/file/d/1RSSkLhZKg97machzOadwG2fHbFhwYSMm/view?usp=sharing
 #url: https://eslam69.github.io
-your url: https://eslam69.github.io
+#your url: https://eslam69.github.io
 
 permalink: /:title/
 
