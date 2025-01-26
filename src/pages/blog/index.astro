@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { myName } from '../index.astro';
 
 const posts = await getCollection('blog');
 posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout title="Blog - Your Name">
+<Layout title={"Blog - " + myName}>
   <div class="max-w-3xl mx-auto">
     <section class="mb-12">
       <h1 class="text-4xl font-bold mb-4">Blog</h1>

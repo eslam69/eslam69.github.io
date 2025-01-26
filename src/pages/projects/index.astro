@@ -9,7 +9,7 @@ const categories = ['All', 'Web Development', 'Mobile App', 'Open Source', 'Mach
 const allTechnologies = [...new Set(projects.flatMap(project => project.data.technologies))].sort();
 ---
 
-<Layout title="Projects - Your Name">
+<Layout title={"Projects - " + myName}>
   <div class="max-w-6xl mx-auto">
     <section class="mb-12">
       <h1 class="text-4xl font-bold mb-4">Projects</h1>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { myName } from './index.astro';
 
 const education = [
   {
@@ -211,10 +212,10 @@ const projects = [
 ];
 ---
 
-<Layout title="CV - Your Name">
+<Layout title={"CV - " + myName}>
   <div class="max-w-3xl mx-auto">
     <section class="mb-12">
-      <h1 class="text-4xl font-bold mb-4">Your Name</h1>
+      <h1 class="text-4xl font-bold mb-4">{myName}</h1>
       <p class="text-xl text-gray-600 dark:text-gray-300 mb-4">
         Senior Software Developer
       </p>
