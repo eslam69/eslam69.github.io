@@ -1,21 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-
+export const myName = "Eslam Khaled";
 const posts = await getCollection('blog');
 const featuredPosts = posts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 ---
 
-<Layout title="Your Name - Personal Website">
+<Layout title={myName +" - Personal Website"}>
   <section class="py-12 text-center">
     <img
-      src="https://via.placeholder.com/150"
-      alt="Your Name"
+      src="https://avatars.githubusercontent.com/u/43995832?v=4"
+      alt={myName}
       class="w-32 h-32 rounded-full mx-auto mb-6"
     />
-    <h1 class="text-4xl font-bold mb-4">Your Name</h1>
+    <h1 class="text-4xl font-bold mb-4">{myName}</h1>
     <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
       Software Developer & Tech Enthusiast
     </p>
@@ -35,7 +35,7 @@ const featuredPosts = posts
     </div>
     <div class="flex justify-center gap-6">
       <a
-        href="mailto:your.email@example.com"
+        href="mailto:eslaamkhaled64@gmail.com"
         class="social-link"
         title="Email"
       >
@@ -44,7 +44,7 @@ const featuredPosts = posts
         </svg>
       </a>
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/eslam69"
         class="social-link"
         title="GitHub"
         target="_blank"
@@ -55,7 +55,7 @@ const featuredPosts = posts
         </svg>
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/eslam64"
         class="social-link"
         title="LinkedIn"
         target="_blank"
@@ -66,7 +66,7 @@ const featuredPosts = posts
         </svg>
       </a>
       <a
-        href="https://huggingface.co/yourusername"
+        href="https://huggingface.co/eslam25"
         class="social-link"
         title="Hugging Face"
         target="_blank"
@@ -82,12 +82,11 @@ const featuredPosts = posts
   <section class="py-12">
     <h2 class="text-3xl font-bold mb-6">About Me</h2>
     <p class="text-gray-600 dark:text-gray-300 mb-4">
-      Write a brief introduction about yourself, your passion for technology, and what drives you.
-      Mention your key skills and areas of expertise.
+      I'm a Software Engineer with a Master's in AI and Robotics from the University of Ottawa, and a strong background in Systems & Biomedical Engineering from Cairo University. My academic journey has been shaped by a blend of theoretical learning and practical experience. I've explored various technical domains, including software engineering, autonomous systems, machine learning, optimization, computational neuroscience, signal processing and embedded systems. Proficient in languages like C, C++, and Python, I've gained hands-on experience with frameworks such as TensorFlow, Qt, and ROS. I thrive on continuous learning, always eager to explore new technologies and stay abreast of industry advancements. As a T-shaped learner, I harness my broad knowledge base to tackle challenges creatively while diving deep into specialized areas to drive innovation.
     </p>
     <p class="text-gray-600 dark:text-gray-300">
-      Share your professional goals and what you're currently working on or learning.
-      Make it personal and engaging.
+      T-shaped learner, building expertise with depth and breadth.
+
     </p>
   </section>
 
@@ -139,7 +138,7 @@ const featuredPosts = posts
     </div>
   </section>
 
-  <section class="py-12">
+  <!-- <section class="py-12">
     <h2 class="text-3xl font-bold mb-6">Featured Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
@@ -158,7 +157,7 @@ const featuredPosts = posts
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 </Layout>
 
 <style>
