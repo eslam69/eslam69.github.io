@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { myName } from './index.astro';
 
+const defaultCover = '/images/wavyMountain.jpg';
+
 export const projects = [
   {
     title: 'IoT Web-based Dashboard',
@@ -9,7 +11,7 @@ export const projects = [
     description: 'Designed and developed a user interface connected to a data acquisition mobile robot through ROS communication. The interface facilitated real-time control, sensory data plotting, space-time sensory data mapping using heatmaps, and incorporated features for comprehensive historical data analysis.',
     demoLink: 'https://youtu.be/Cj7dUl67Fww?si=yy_5OJI-ni-1Tfc1',
     year: '2024',
-    image: 'https://raw.githubusercontent.com/eslam69/ROS-Dashboard/main/demo.gif',
+    image:  defaultCover,
     category: 'Web Development',
   },
   {
@@ -17,7 +19,7 @@ export const projects = [
     technologies: ['Deep Learning', 'PyTorch'],
     description: 'Implemented an advanced Encoder-Decoder model for precise monocular depth estimation using RGB frames. Achieved notable efficiency improvements compared to existing methods.',
     year: '2023',
-    image: 'https://github.com/eslam69/depth-estimation-demo/raw/main/demo.gif',
+    image: defaultCover,
     category: 'Machine Learning',
   },
   {
@@ -25,7 +27,7 @@ export const projects = [
     technologies: ['Deep Learning', 'PyTorch'],
     description: 'Developed Intrusion detection models for the automotive Controller Area Network Bus utilizing Convolutional Neural Networks and Ensemble Methods.',
     year: '2023',
-    image: 'https://repository-images.githubusercontent.com/642310318/75559800-61b4-11e8-86bf-41b2851a5681',
+    image:  defaultCover,
     category: 'Machine Learning',
   },
   {
@@ -33,7 +35,7 @@ export const projects = [
     technologies: ['Kafka', 'Docker', 'Machine Learning'],
     description: 'Conducted thorough analysis and preprocessing of DNS traffic data, addressed data imbalances, and utilized feature engineering for dimensionality reduction. Implemented a binary classification pipeline to predict DNS-based data exfiltration. Integrated pipeline into Kafka streaming within Docker. Implemented dynamic analysis: processed 1,000 observations in sliding window. Dynamically retrained model based on evolving metrics for real-time threat detection.',
     year: '2023',
-    image: 'https://miro.medium.com/max/1200/1*KWP1GbhL16zvyoQ8Oj-99g.jpeg',
+    image: defaultCover,
     category: 'Machine Learning',
   },
   {
@@ -41,7 +43,7 @@ export const projects = [
     technologies: ['IoT', 'C++', 'ns-3', 'Optimization'],
     description: 'Designed and created a wireless sensor node deployment optimization system utilizing Particle Swarm Optimization, developed using the ns-3 simulator and C++, to enhance network coverage and performance.',
     year: '2023',
-    image: 'https://www.nsnam.org/docs/release/3.24/doxygen/html/ns3.png',
+    image: defaultCover,
     category: 'IoT',
   },
   {
@@ -50,7 +52,7 @@ export const projects = [
     description: 'Developed a versatile logger daemon for Raspberry Pi to centralize and manage log data from various applications. Implemented POSIX communication, including sockets and pipes, and utilized a custom C++ library for synchronized shared memory operations. Integrated Boost logger module, enabling dynamic configuration via a config file. Automated module builds with CMake.',
     githubLink: 'https://github.com/eslam69/RPI-MultiService-Logger-Daemon',
     year: '2023',
-    image: 'https://raw.githubusercontent.com/eslam69/RPI-MultiService-Logger-Daemon/main/demo.png',
+    image:  defaultCover,
     category: 'Embedded Systems',
   },
   {
@@ -58,7 +60,7 @@ export const projects = [
     technologies: ['Reinforcement Learning', 'Adaptive Control', 'C++'],
     description: 'Implemented an online model-free reinforcement learning approach to enhance quadcopter trajectory tracking, outperforming traditional PID controllers in challenging scenarios with dynamic conditions and sudden payload changes.',
     year: '2023',
-    image: 'https://raw.githubusercontent.com/eslam69/RL-Quadcopter/main/demo.gif',
+    image:  defaultCover,
     category: 'Machine Learning',
   },
   {
@@ -66,7 +68,7 @@ export const projects = [
     technologies: ['Python', 'Open3D', 'Deep learning', 'PyTorch'],
     description: 'Extracted Lidar point-clouds from the Waymo data set, done visualization, conversion to a birds-eye view representation then done inference with FPN-ResNet.',
     year: '2023',
-    image: 'https://raw.githubusercontent.com/eslam69/3D-Object-Detection/main/demo.png',
+    image: defaultCover,
     category: 'Computer Vision',
   },
   {
@@ -74,12 +76,16 @@ export const projects = [
     technologies: ['Extended Kalman Filter', 'Open3D', 'Deep learning'],
     description: 'Implemented an extended Kalman filter to track several vehicles over time, by fusing camera and lidar detections.',
     year: '2023',
+    image: defaultCover,
+    category: 'Machine Learning',
   },
   {
     title: 'Scan Matching Localization in CARLA',
     technologies: ['C++', 'PCL', 'CARLA Simulator', 'Eigen'],
     description: 'Implemented Iterative Closest Point (ICP) Algorithm on 3D point cloud map obtained from Carla simulator to recover the position of a car as it moves.',
     year: '2023',
+    image: defaultCover,
+    category: 'Machine Learning',
   },
   {
     title: 'Optimization Toolkit for Neural Models (BSc Graduation Project)',
@@ -87,7 +93,7 @@ export const projects = [
     description: 'A semi/full automated optimization tool to calibrate complex neural computer models with experimental data, enhancing the study of nervous system and muscle control by accurately mimicking cellular mechanisms and neural signals.',
     githubLink: 'https://github.com/ForthePareto/SpikOpt',
     year: '2021',
-    image: 'https://raw.githubusercontent.com/ForthePareto/SpikOpt/main/demo.gif',
+    image: defaultCover,
     category: 'Open Source',
   },
   {
@@ -96,7 +102,7 @@ export const projects = [
     description: 'A wearable device that helps to track the location of patients indoor e.g hospitals based on wifi‑figerprints.',
     githubLink: 'https://github.com/eslam69/Indoor-Localization-wearable',
     year: '2021',
-    image: 'https://raw.githubusercontent.com/eslam69/Indoor-Localization-wearable/main/demo.jpg',
+    image:  defaultCover,
     category: 'IoT',
   },
   {
@@ -105,7 +111,7 @@ export const projects = [
     description: 'A library that implements a variety of Image processing and computer vision algorithms from scratch, with a user‑friendly GUI.',
     githubLink: 'https://github.com/ForthePareto/SpikeCV',
     year: '2021',
-    image: 'https://raw.githubusercontent.com/ForthePareto/SpikeCV/main/demo.png',
+    image:  defaultCover,
     category: 'Computer Vision',
   },
   {
@@ -114,12 +120,16 @@ export const projects = [
     description: 'A road‑lane lines detection pipeline with Computer Vision.',
     githubLink: 'https://github.com/eslam69/Advanced-Lane-Finding',
     year: '2021',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'Automated Dead Chicken Detection System',
     technologies: ['Computer Vision', 'YOLOv8', 'Jetson Nano', 'TensorRT', 'ROS'],
     description: 'Developed automated system for detecting deceased chickens utilizing YOLOv8. Achieved an impressive Mean Average Precision (MAP) of 0.91. Successfully deployed the model on Jetson Nano, optimizing performance through TensorRT inference. Integrated the solution into a ROS node for seamless communication and interaction within a robotic system.',
     year: '2023',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'EAOS Car',
@@ -127,12 +137,16 @@ export const projects = [
     description: 'Mini Self‑Driving car.',
     githubLink: 'https://github.com/eslam69/EAOS-Car',
     year: '2021',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'Real‑Time Embedded Temperature Controlling System',
     technologies: ['Embedded C', 'Design patterns', 'Atmega32'],
     githubLink: 'https://github.com/ForthePareto/Embedded-Temperature-Controlling-System',
     year: '2021',
+    image: defaultCover,
+    category: 'Embedded Systems',
   },
   {
     title: 'OpenStreetMap Route Planner',
@@ -140,6 +154,8 @@ export const projects = [
     description: 'An implementation of A* Search Algorithm for finding the shortest path between two nodes on OpenStreetMap.',
     githubLink: 'https://github.com/eslam69/OpenStreetMap-Route_Planning',
     year: '2020',
+    image: defaultCover,
+    category: 'Web Development',
   },
   {
     title: 'Linux System Monitor',
@@ -147,48 +163,68 @@ export const projects = [
     description: 'A software similar to htop that monitors the running processes in Linux OS.',
     githubLink: 'https://github.com/eslam69/Linux-System-Monitor',
     year: '2020',
+    image: defaultCover,
+    category: 'Embedded Systems',
   },
   {
     title: 'Hospital Computerized Maintenance Management System (CMMS)',
     technologies: ['Python', 'MySQL', 'Qt'],
     githubLink: 'https://github.com/eslam69/CMMS-for-healthcare-institutions',
     year: '2020',
+    image: defaultCover,
+    category: 'Web Development',
   },
   {
     title: 'Digital FIR Filter for Noise Reduction In ECG Signal',
     technologies: ['8051 micro‑controller', 'DSP', 'C', 'FDA tools'],
     description: 'Developed a digital FIR filter on an 8051 microcontroller to reduce ECG signal noise. Utilized DSP algorithms in C, implemented a ring buffer for data handling, and applied floating point to fixed‑point conversion for optimization. Improved signal to noise ratio, enhancing ECG accuracy.',
     year: '2020',
+    image: defaultCover,
+    category: 'Embedded Systems',
   },
   {
     title: 'Music Recognizer Software (Shazam like‑App)',
     technologies: ['Python', 'DSP', 'Librosa', 'Qt'],
     githubLink: 'https://github.com/eslam69/Music-Recognizer',
     year: '2020',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'Blind Source Separation Software',
     technologies: ['Python', 'ICA', 'Qt'],
     description: 'The software objective is to recover the original component signals from a mixture signal, like abnormal ECG signal(with arrhythmia) or cocktail party voices mixture.',
     year: '2020',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'Elevator Control System',
     technologies: ['8051 micro‑controller', 'C', 'Proteus'],
     year: '2020',
+    image: defaultCover,
+    category: 'Embedded Systems',
   },
   {
     title: 'Assistive glasses for Alzheimer’s patient',
     technologies: ['Python', 'OpenCV', 'Arduino', 'camera', 'sensors'],
     description: 'Glasses equipped with mini camera and micro controller aimed to recognize people for the Alzheimer’s patient.',
     year: '2019',
+    image: defaultCover,
+    category: 'Computer Vision',
   },
   {
     title: 'Low‑cost infants radiant warmer',
     technologies: ['Atmega16', 'motor', 'sensors'],
     year: '2020',
+    image: defaultCover,
+    category: 'Embedded Systems',
   },
-];
+].map(project => ({
+  ...project,
+  image: project.image || defaultCover,
+  category: project.category || 'Other'
+}));
 
 const education = [
   {
