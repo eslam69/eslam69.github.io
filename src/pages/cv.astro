@@ -53,15 +53,6 @@ const skills = [
   },
 ];
 
-const certifications = [
-  {
-    name: 'AWS Certified Developer',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-  },
-  // Add more certifications
-];
-
 const projects = [
   {
     title: 'IoT Web-based Dashboard',
@@ -227,6 +218,87 @@ const projects = [
     year: '2020',
   },
 ];
+
+const professionalDevelopment = [
+  {
+    title: 'Self-Driving Car Nanodegree',
+    description: 'Computer Vision, Sensor Fusion, Localization, Planning and Control.',
+    link: 'https://graduation.udacity.com/confirm/e/b532faaa-b2ad-11ed-a01f-d362ad080aa8',
+    issuer: 'Udacity',
+  },
+  {
+    title: 'Image and Video Processing',
+    description: 'Image and video compression, spatial processing, restoration, segmentation, geometric PDEs, sparse modeling and compressed sensing',
+    link: 'https://www.coursera.org/account/accomplishments/verify/HHRWSTSJDYHV',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Computer Science for Artificial Intelligence Professional Certificate',
+    description: 'By HarvardX',
+    link: 'https://credentials.edx.org/credentials/a50cd22470a84a6c8b5e86daf7984b7e/',
+    issuer: 'edX',
+  },
+  {
+    title: 'Deep Learning Specialization',
+    description: 'By Deeplearning.AI',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/23Y3UNXGX254',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'C++ Developer Nanodegree',
+    description: 'Topics: Modern C++17, OOP, Concurrency, Memory Management and STL.',
+    link: 'https://graduation.udacity.com/confirm/NWSVXPEV',
+    issuer: 'Udacity',
+  },
+  {
+    title: 'Digital Signal Processing',
+    description: 'By École polytechnique fédérale de Lausanne (EPFL)',
+    link: 'https://www.coursera.org/account/accomplishments/verify/KTSQDNBTQB4Z',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Machine Learning',
+    description: 'By Stanford University, Course by Andrew Ng.',
+    link: 'https://www.coursera.org/account/accomplishments/verify/QXZR7P642HTE',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Mathematics for Machine Learning Specialization',
+    description: 'By Imperial College London',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/2WP9S3PNXLXS',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Reinforcement Learning: Sample-based Learning Methods',
+    description: 'By University of Alberta',
+    link: 'https://www.coursera.org/account/accomplishments/verify/BR9L8PAM8WTZ',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Fundamentals of Reinforcement Learning',
+    description: 'By University of Alberta',
+    link: 'https://www.coursera.org/account/accomplishments/verify/FY2KJNKUKVAY',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Computational Neuroscience',
+    description: 'By University of Washington',
+    link: 'https://www.coursera.org/account/accomplishments/verify/9JRPUWUW9N9R',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Open Source Software Development Methods',
+    description: 'By The Linux Foundation',
+    link: 'https://www.coursera.org/account/accomplishments/verify/X5NFU8STXLWL',
+    issuer: 'Coursera',
+  },
+  {
+    title: 'Requirements Writing',
+    description: 'By The University of New South Wales',
+    link: 'https://www.coursera.org/account/accomplishments/verify/WB39KYML9J87',
+    issuer: 'Coursera',
+  },
+];
 ---
 
 <Layout title={"CV - " + myName}>
@@ -294,14 +366,17 @@ const projects = [
 
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">
-        Certifications
+        Professional Development
       </h2>
       <div class="space-y-4">
-        {certifications.map(cert => (
+        {professionalDevelopment.map(dev => (
           <div>
-            <h3 class="text-xl font-semibold">{cert.name}</h3>
-            <p class="text-gray-600 dark:text-gray-300">{cert.issuer}</p>
-            <p class="text-gray-500 dark:text-gray-400">{cert.year}</p>
+            <h3 class="text-xl font-semibold">{dev.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300">{dev.description}</p>
+            <a href={dev.link} class="text-primary-600 dark:text-primary-400 hover:underline">
+              [Link]
+            </a>
+            <p class="text-gray-500 dark:text-gray-400">{dev.issuer}</p>
           </div>
         ))}
       </div>
