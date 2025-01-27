@@ -5,7 +5,11 @@ export const myName = "Eslam Khaled";
 const posts = await getCollection('blog');
 const featuredPosts = posts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+  .filter(post => 
+    post.slug === 'gsoc-journey' || // Ensure the GSoC post is included
+    post.data.featured // You can also add a 'featured' flag in frontmatter
+  )
+  .slice(0, 1);
 ---
 
 <Layout title={myName +" - Personal Website"}>

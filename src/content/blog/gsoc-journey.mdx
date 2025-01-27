@@ -1,0 +1,102 @@
+---
+title: "My Two-Year Journey with Google Summer of Code: Building Tools for Neuroscience"
+description: "A reflection on two years of contributing to open-source neuroscience tools through Google Summer of Code with INCF, focusing on Neuroptimus and HippoUnit integration."
+pubDate: 2024-03-22
+coverImage: "https://portal.bluebrain.epfl.ch/wp-content/uploads/2023/06/BBP-MOOC-Simulation-neuroscience.jpg"
+tags: ["GSoC", "Open Source", "Neuroscience", "Python"]
+readingTime: 12
+---
+
+# **My Two-Year Journey with Google Summer of Code: Building Tools for Neuroscience**  
+**By [Your Name]**  
+
+## **Introduction**  
+Google Summer of Code (GSoC) is a global program where contributors dive into open-source projects, mentored by experienced developers. For the past two years, I’ve had the privilege of working with the **International Neuroinformatics Coordinating Facility (INCF)** to improve tools for neuroscience research. My journey focused on **Neuroptimus**, a parameter optimization software, and its integration with **HippoUnit**, a tool for testing neuronal models. This post reflects on my technical contributions, challenges, and lessons learned over two summers of coding, collaboration, and growth.  
+
+---
+
+## **Year 1 (2023): Bridging Tools for Better Neuroscience Models**  
+
+### **Project Overview**  
+In 2023, I tackled the integration of **HippoUnit** (for automated neuron model testing) with **Neuroptimus** (for parameter optimization). The goal was to help researchers build more accurate biophysical models of hippocampal neurons by combining automated testing with advanced optimization algorithms like evolutionary strategies.  
+
+### **Key Contributions**  
+- **Porting Legacy Code**: Adapted a prototype integration from GSoC 2022 to the latest Neuroptimus version, ensuring compatibility with both CLI and GUI modes.  
+- **GUI Overhaul**:  
+  - Transformed Neuroptimus’s Qt-based GUI into a scalable interface.  
+  - Added HippoUnit-specific elements (e.g., test configuration panels) and resolved blocking UX issues.  
+- **New Features**:  
+  - Integrated missing HippoUnit tests (`ObliqueIntegrationTest`, `BackpropagationAPTest`).  
+  - Implemented a **penalty mechanism** to guide optimization when models failed tests.  
+- **Demo**: Redesigned the GUI improved usability significantly (see GIFs [before](https://i.imgur.com/6pCcPS3.gif) vs. [after](https://user-images.githubusercontent.com/43995832/277574692-a291795d-d0a2-40c6-a86a-ab41db66a579.gif)).  
+
+**Code**: [HippoUnit PR](https://github.com/blazma/hippounit/pull/1) | [Neuroptimus Fork](https://github.com/eslam69/neuroptimus-hippoUnit)  
+
+---
+
+## **Year 2 (2024): Enhancing Usability and Accessibility**  
+
+### **Project Overview**  
+Building on 2023’s work, I focused on refining Neuroptimus’s **user interface** and **reproducibility** to make parameter optimization more intuitive for neuroscientists.  
+
+### **Key Contributions**  
+- **UI/UX Improvements**:  
+  - Added **save/load functionality** for optimization settings (critical for reproducibility).  
+  - Introduced a **real-time progress bar** for CLI and GUI modes.  
+  - Revamped the fitness tab based on mentor feedback ([before](https://gist.github.com/user-attachments/assets/e3945583-066b-43c2-81ee-431c63aebf41) vs. [after](https://gist.github.com/user-attachments/assets/5c22c0e7-6da9-4c98-905c-a2cc542a701a)).  
+- **Visualization Upgrades**: Enabled users to generate plots of optimization results (e.g., feature errors, model traces) for deeper analysis.  
+- **Containerization**: Dockerized Neuroptimus CLI to ensure consistent performance across environments.  
+
+**Code**: [2024 Commit Summary](https://github.com/eslam69/neuroptimus-hippoUnit/compare/GSoC23...main)  
+
+---
+
+## **Impact and Outcomes**  
+- **For Researchers**:  
+  - A unified workflow for testing *and* optimizing neuron models.  
+  - Reduced setup time with Docker and GUI improvements.  
+- **For the Community**:  
+  - Neuroptimus is now more accessible to non-technical users.  
+  - Open-source contributions are [publicly available](https://github.com/eslam69/neuroptimus-hippoUnit), fostering collaboration.  
+
+---
+
+## **Lessons Learned**  
+### **Technical Growth**  
+- **GUI Development**: Mastered Qt framework and scalable UI design principles.  
+- **DevOps**: Gained hands-on experience with Docker for reproducibility.  
+- **Testing**: Learned to balance feature development with backward compatibility.  
+
+### **Soft Skills**  
+- **Communication**: Regular syncs with mentors taught me to articulate blockers clearly.  
+- **Iterative Design**: Feedback loops (e.g., UI tweaks in 2024) highlighted the value of user-centric development.  
+
+### **The Bigger Picture**  
+Open-source isn’t just about code—it’s about building tools that empower others. Seeing Neuroptimus used in research papers would be my ultimate reward!  
+
+---
+
+## **Tips for Future GSoC Contributors**  
+1. **Choose Passion Projects**: Working on neuroscience tools aligned with my academic interests kept me motivated.  
+2. **Embrace Feedback**: Mentors spotted edge cases I’d overlooked.  
+3. **Document Early**: Clear READMEs and GIFs saved hours of explaining my work later.  
+
+---
+
+## **Acknowledgments**  
+Huge thanks to my mentors at INCF for their patience and guidance. Special shoutout to the open-source community for fostering collaboration!  
+
+---
+
+## **What’s Next?**  
+I’ll continue maintaining Neuroptimus and explore integrating machine learning for smarter parameter optimization. Interested in collaborating? Reach out on [GitHub](https://github.com/eslam69) or [LinkedIn](#)!  
+
+---
+
+**#GSoC #OpenSource #Neuroscience #Neuroinformatics**  
+
+---
+
+### **Embedded Demos**  
+<script src="https://gist.github.com/eslam69/6bf4bac85fd5413a75fc289280b78311.js"></script>  
+<script src="https://gist.github.com/eslam69/1d0931a6eb3412201126ed6b7c589973.js"></script>  
