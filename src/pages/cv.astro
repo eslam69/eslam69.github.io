@@ -27,13 +27,30 @@ const experience = [
 ];
 
 const skills = [
-  'JavaScript/TypeScript',
-  'React',
-  'Node.js',
-  'Python',
-  'AWS',
-  'Docker',
-  // Add more skills
+  {
+    category: 'Technical Skills',
+    skills: 'Software Engineering, Optimization, Machine learning, Embedded systems, Computer Vision, OOP, Algorithms',
+  },
+  {
+    category: 'Tools and Languages',
+    skills: 'C(Embedded C), C++(STL, Boost, gtest), Python, ROS, TensorFlow, OpenGL, Qt, OpenCv, R',
+  },
+  {
+    category: 'Embedded Systems',
+    skills: 'Micro‑controllers: (8051 ,AVR atmega16, atmega32), Embedded linux ,Misra C, Design Patterns for Embedded Systems',
+  },
+  {
+    category: 'Web Development',
+    skills: 'Flask, JavaScript, HTML, CSS, Bootstrap',
+  },
+  {
+    category: 'Databases',
+    skills: 'MySQL, SQLite, MongoDB',
+  },
+  {
+    category: 'Simulation Tools',
+    skills: 'Proteus, Simulink, Gazebo, CARLA',
+  },
 ];
 
 const certifications = [
@@ -265,11 +282,12 @@ const projects = [
       <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">
         Skills
       </h2>
-      <div class="flex flex-wrap gap-2">
+      <div class="space-y-6">
         {skills.map(skill => (
-          <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">
-            {skill}
-          </span>
+          <div>
+            <h3 class="text-xl font-semibold">{skill.category}</h3>
+            <p class="text-gray-600 dark:text-gray-300">{skill.skills}</p>
+          </div>
         ))}
       </div>
     </section>
