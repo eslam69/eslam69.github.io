@@ -3,7 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import { projects } from '../cv.astro';
 import { myName } from '../index.astro';
 
-const categories = ['All', 'Web Development', 'Mobile App', 'Open Source', 'Machine Learning'];
+const categories = [
+  'All', 
+  'Web Development',
+  'Machine Learning',
+  'Open Source',
+  'Embedded Systems',
+  'Computer Vision',
+  'IoT'
+];
 const allTechnologies = [...new Set(projects.flatMap(project => project.technologies))].sort();
 ---
 
