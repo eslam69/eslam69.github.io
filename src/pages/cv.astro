@@ -2,118 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { myName } from './index.astro';
 
-const education = [
-  {
-    degree: "Master's in Electrical and Computer Engineering (MEng) (with a focus on Autonomous Systems and AI)",
-    school: 'University of Ottawa',
-    location: 'Ottawa, Canada',
-    year: '2023 - 2024',
-    description: [
-      'Overall Grade: A+',
-      'Coursework & Topics: AI for Cybersecurity, Learning-Based Computer Vision, Reinforcement Learning for Intelligent Control, Applied Machine learning, Robotics, Ubiquitous Sensing for Smart Cities, Autonomous Mobile Robotics.',
-    ],
-  },
-  {
-    degree: 'B.S. in Systems & Biomedical Engineering',
-    school: 'Cairo University',
-    location: 'Cairo, Egypt',
-    year: '2016 - 2021',
-    description: [
-      'CGPA: 3.44/4 (Very Good), Graduation Project Grade: Excellent',
-      'Relevant coursework: Data structures & Algorithms, Database Design, Computer Architecture, Software Engineering, Computer Networking, Image processing, Computer Vision, IoT, Probability & Statistics, Machine Learning, Linear Algebra, Calculus, DSP, Embedded Systems, Computer Graphics, Control, Microelectronics.',
-    ],
-  },
-];
-
-const experience = [
-  {
-    title: 'Embedded Linux Software Engineer',
-    company: 'Valeo',
-    location: 'Cairo, Egypt',
-    period: 'Nov. 2023 - Present',
-    description: [
-      'Developing and maintaining software codes (C/C++) based on defined component requirements and component design.',
-      'Developing and testing of software components that connect the vehicle with surrounding vehicles, smart devices or to the infrastructure (V2X).',
-      'Developing, coding and testing of software components that provide telematics services to the vehicle such as Emergency Call, LTE connectivity, Firmware Update OTA, Vehicle SW updates.',
-    ],
-  },
-  {
-    title: 'AI Software Engineer',
-    company: 'Tomorrow Smile',
-    location: 'Remote, Canada · (Part-time)',
-    period: 'Jan. 2024 - Apr. 2024',
-    description: [
-      'Researched and implemented state-of-the-art deep learning models for automated teeth alignment and dental landmark detection for dental planning software.',
-      'Developed functionalities for 3D dental scan processing and visualization using VTK.',
-    ],
-  },
-  {
-    title: 'Open Source Software Contributor',
-    company: 'Google Summer of Code at (INCF)',
-    location: 'Remote',
-    period: 'May. 2023 - Oct. 2024',
-    description: [
-      'Developed an integration between HippoUnit and Neuroptimus, two popular tools for neuroscience modeling and simulation. [2023] [2024]',
-      'Conducted thorough compatibility testing between HippoUnit and Neuroptimus feature-based optimization, verifying their synergy for enhanced neuronal model accuracy.',
-      'Enhanced Neuroptimus\'s graphical interface for HippoUnit integration by transforming the Qt-based GUI into a scalable design, resolving optimization process hurdles, and reorganizing elements for improved user experience.',
-      'Implemented saving and loading functionality for Neuroptimus, enabling users to save and load optimization settings seamlessly within the GUI.',
-      'Added a progress bar feature for both CLI and GUI modes, providing real-time monitoring of optimization progress.',
-      'Containerized the Neuroptimus using Docker to ensure easy reproducibility across different environments.',
-    ],
-  },
-  {
-    title: 'Machine Learning Research Intern',
-    company: 'ONE Lab Egypt',
-    location: 'Giza, Egypt',
-    period: 'Aug. 2021 - Oct. 2021',
-    description: [
-      'Worked on building a Text-to-Speech (TTS) Deep learning pipeline for deployment on edge devices such as the NVIDIA Jetson Nano & Rasperry-pi 4, with the goal of assisting individuals with Autism Spectrum Disorder (ASD).',
-      'Conducted benchmarks on state-of-the-art TTS model architectures on low-level embedded kits.',
-      'Utilized TensorFlow Lite, ONNX and TensorRT to optimize model performance and reduce inference time.',
-      'Created scripts for a user-friendly, end-to-end inference pipeline for the TTS system.',
-    ],
-  },
-  {
-    title: 'Software Engineer (Internship)',
-    company: 'Master Micro',
-    location: 'Cairo, Egypt',
-    period: 'Sep. 2020 - Jan. 2021',
-    description: [
-      'Worked on the Analog Designer\'s Toolbox project as part of the ADT team, utilizing agile and TDD practices.',
-      'Developed a tool with a user-friendly GUI for creating high-quality electrical circuit schematic diagrams, featuring functionality such as drawing and editing schematics, generating and customizing reports, and importing and exporting designs in various formats.',
-      'These functionalities are used by analog designers to improve and speed-up the design process and increase their productivity.',
-    ],
-  },
-];
-
-const skills = [
-  {
-    category: 'Technical Skills',
-    skills: 'Software Engineering, Optimization, Machine learning, Embedded systems, Computer Vision, OOP, Algorithms',
-  },
-  {
-    category: 'Tools and Languages',
-    skills: 'C(Embedded C), C++(STL, Boost, gtest), Python, ROS, TensorFlow, OpenGL, Qt, OpenCv, R',
-  },
-  {
-    category: 'Embedded Systems',
-    skills: 'Micro‑controllers: (8051 ,AVR atmega16, atmega32), Embedded linux ,Misra C, Design Patterns for Embedded Systems',
-  },
-  {
-    category: 'Web Development',
-    skills: 'Flask, JavaScript, HTML, CSS, Bootstrap',
-  },
-  {
-    category: 'Databases',
-    skills: 'MySQL, SQLite, MongoDB',
-  },
-  {
-    category: 'Simulation Tools',
-    skills: 'Proteus, Simulink, Gazebo, CARLA',
-  },
-];
-
-const projects = [
+export const projects = [
   {
     title: 'IoT Web-based Dashboard',
     technologies: ['Flask', 'ROS', 'Dash', 'Plotly', 'CSS'],
@@ -276,6 +165,117 @@ const projects = [
     title: 'Low‑cost infants radiant warmer',
     technologies: ['Atmega16', 'motor', 'sensors'],
     year: '2020',
+  },
+];
+
+const education = [
+  {
+    degree: "Master's in Electrical and Computer Engineering (MEng) (with a focus on Autonomous Systems and AI)",
+    school: 'University of Ottawa',
+    location: 'Ottawa, Canada',
+    year: '2023 - 2024',
+    description: [
+      'Overall Grade: A+',
+      'Coursework & Topics: AI for Cybersecurity, Learning-Based Computer Vision, Reinforcement Learning for Intelligent Control, Applied Machine learning, Robotics, Ubiquitous Sensing for Smart Cities, Autonomous Mobile Robotics.',
+    ],
+  },
+  {
+    degree: 'B.S. in Systems & Biomedical Engineering',
+    school: 'Cairo University',
+    location: 'Cairo, Egypt',
+    year: '2016 - 2021',
+    description: [
+      'CGPA: 3.44/4 (Very Good), Graduation Project Grade: Excellent',
+      'Relevant coursework: Data structures & Algorithms, Database Design, Computer Architecture, Software Engineering, Computer Networking, Image processing, Computer Vision, IoT, Probability & Statistics, Machine Learning, Linear Algebra, Calculus, DSP, Embedded Systems, Computer Graphics, Control, Microelectronics.',
+    ],
+  },
+];
+
+const experience = [
+  {
+    title: 'Embedded Linux Software Engineer',
+    company: 'Valeo',
+    location: 'Cairo, Egypt',
+    period: 'Nov. 2023 - Present',
+    description: [
+      'Developing and maintaining software codes (C/C++) based on defined component requirements and component design.',
+      'Developing and testing of software components that connect the vehicle with surrounding vehicles, smart devices or to the infrastructure (V2X).',
+      'Developing, coding and testing of software components that provide telematics services to the vehicle such as Emergency Call, LTE connectivity, Firmware Update OTA, Vehicle SW updates.',
+    ],
+  },
+  {
+    title: 'AI Software Engineer',
+    company: 'Tomorrow Smile',
+    location: 'Remote, Canada · (Part-time)',
+    period: 'Jan. 2024 - Apr. 2024',
+    description: [
+      'Researched and implemented state-of-the-art deep learning models for automated teeth alignment and dental landmark detection for dental planning software.',
+      'Developed functionalities for 3D dental scan processing and visualization using VTK.',
+    ],
+  },
+  {
+    title: 'Open Source Software Contributor',
+    company: 'Google Summer of Code at (INCF)',
+    location: 'Remote',
+    period: 'May. 2023 - Oct. 2024',
+    description: [
+      'Developed an integration between HippoUnit and Neuroptimus, two popular tools for neuroscience modeling and simulation. [2023] [2024]',
+      'Conducted thorough compatibility testing between HippoUnit and Neuroptimus feature-based optimization, verifying their synergy for enhanced neuronal model accuracy.',
+      'Enhanced Neuroptimus\'s graphical interface for HippoUnit integration by transforming the Qt-based GUI into a scalable design, resolving optimization process hurdles, and reorganizing elements for improved user experience.',
+      'Implemented saving and loading functionality for Neuroptimus, enabling users to save and load optimization settings seamlessly within the GUI.',
+      'Added a progress bar feature for both CLI and GUI modes, providing real-time monitoring of optimization progress.',
+      'Containerized the Neuroptimus using Docker to ensure easy reproducibility across different environments.',
+    ],
+  },
+  {
+    title: 'Machine Learning Research Intern',
+    company: 'ONE Lab Egypt',
+    location: 'Giza, Egypt',
+    period: 'Aug. 2021 - Oct. 2021',
+    description: [
+      'Worked on building a Text-to-Speech (TTS) Deep learning pipeline for deployment on edge devices such as the NVIDIA Jetson Nano & Rasperry-pi 4, with the goal of assisting individuals with Autism Spectrum Disorder (ASD).',
+      'Conducted benchmarks on state-of-the-art TTS model architectures on low-level embedded kits.',
+      'Utilized TensorFlow Lite, ONNX and TensorRT to optimize model performance and reduce inference time.',
+      'Created scripts for a user-friendly, end-to-end inference pipeline for the TTS system.',
+    ],
+  },
+  {
+    title: 'Software Engineer (Internship)',
+    company: 'Master Micro',
+    location: 'Cairo, Egypt',
+    period: 'Sep. 2020 - Jan. 2021',
+    description: [
+      'Worked on the Analog Designer\'s Toolbox project as part of the ADT team, utilizing agile and TDD practices.',
+      'Developed a tool with a user-friendly GUI for creating high-quality electrical circuit schematic diagrams, featuring functionality such as drawing and editing schematics, generating and customizing reports, and importing and exporting designs in various formats.',
+      'These functionalities are used by analog designers to improve and speed-up the design process and increase their productivity.',
+    ],
+  },
+];
+
+const skills = [
+  {
+    category: 'Technical Skills',
+    skills: 'Software Engineering, Optimization, Machine learning, Embedded systems, Computer Vision, OOP, Algorithms',
+  },
+  {
+    category: 'Tools and Languages',
+    skills: 'C(Embedded C), C++(STL, Boost, gtest), Python, ROS, TensorFlow, OpenGL, Qt, OpenCv, R',
+  },
+  {
+    category: 'Embedded Systems',
+    skills: 'Micro‑controllers: (8051 ,AVR atmega16, atmega32), Embedded linux ,Misra C, Design Patterns for Embedded Systems',
+  },
+  {
+    category: 'Web Development',
+    skills: 'Flask, JavaScript, HTML, CSS, Bootstrap',
+  },
+  {
+    category: 'Databases',
+    skills: 'MySQL, SQLite, MongoDB',
+  },
+  {
+    category: 'Simulation Tools',
+    skills: 'Proteus, Simulink, Gazebo, CARLA',
   },
 ];
 

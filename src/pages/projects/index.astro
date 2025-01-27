@@ -1,13 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { projects } from '../cv.astro';
 import { myName } from '../index.astro';
 
-const projects = await getCollection('projects');
-projects.sort((a, b) => b.data.completionDate.valueOf() - a.data.completionDate.valueOf());
-
 const categories = ['All', 'Web Development', 'Mobile App', 'Open Source', 'Machine Learning'];
-const allTechnologies = [...new Set(projects.flatMap(project => project.data.technologies))].sort();
+const allTechnologies = [...new Set(projects.flatMap(project => project.technologies))].sort();
 ---
 
 <Layout title={"Projects - " + myName}>
@@ -54,30 +51,30 @@ const allTechnologies = [...new Set(projects.flatMap(project => project.data.tec
       {projects.map(project => (
         <article
           class="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
-          data-category={project.data.category}
-          data-technologies={JSON.stringify(project.data.technologies)}
+          data-category={project.category}
+          data-technologies={JSON.stringify(project.technologies)}
         >
           <img
-            src={project.data.image}
-            alt={project.data.title}
+            src={project.image}
+            alt={project.title}
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">{project.data.title}</h3>
+            <h3 class="text-xl font-bold mb-2">{project.title}</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
-              {project.data.description}
+              {project.description}
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
-              {project.data.technologies.map(tech => (
+              {project.technologies.map(tech => (
                 <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
                   {tech}
                 </span>
               ))}
             </div>
             <div class="flex gap-4">
-              {project.data.github && (
+              {project.githubLink && (
                 <a
-                  href={project.data.github}
+                  href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
@@ -88,9 +85,9 @@ const allTechnologies = [...new Set(projects.flatMap(project => project.data.tec
                   </svg>
                 </a>
               )}
-              {project.data.demo && (
+              {project.demoLink && (
                 <a
-                  href={project.data.demo}
+                  href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
