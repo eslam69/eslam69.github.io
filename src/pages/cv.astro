@@ -256,9 +256,12 @@ const experience = [
     location: 'Cairo, Egypt',
     period: 'Nov. 2023 - Present',
     description: [
-      'Developing and maintaining software codes (C/C++) based on defined component requirements and component design.',
-      'Developing and testing of software components that connect the vehicle with surrounding vehicles, smart devices or to the infrastructure (V2X).',
-      'Developing, coding and testing of software components that provide telematics services to the vehicle such as Emergency Call, LTE connectivity, Firmware Update OTA, Vehicle SW updates.',
+      'Contributed to the Software Defined Vehicle (SDV) project, Worked on communication feature unit modules including CAN, LIN, Ethernet, SOME/IP, Time Synchronization.',
+      'Developed and maintained automation testing packages for Ethernet and LIN, focusing on both validation and integration testing.',
+      'Developed custom tools with GUIs to automate requirements analysis, ARXMLs parsing, and comparison with customer requirements, facilitating automated conflict reporting, automated test planning, test cases generation and requirements management.',
+      'Actively contributed to ASPICE processes, with significant involvement in SWE1, SWE3, and SWE4 activities.',
+      'Applied VectorCAST for unit testing, contributing to the robustness and reliability of software deliverables.',
+      'Tools and Technologies: C/C++, Python, Qt, Git, Bash scripting, Vector tools, Lauterbach Trace32, Vector CANoe, IBM DOORS, VectorCAST.',
     ],
   },
   {
@@ -417,6 +420,15 @@ const professionalDevelopment = [
     issuer: 'Coursera',
   },
 ];
+
+const volunteering = [
+  {
+    title: 'IT Volunteer',
+    organization: 'The Conference on Neural Information Processing Systems (NeurIPS)',
+    link: 'https://nips.cc/',
+    period: '2020, 2021',
+  }
+];
 ---
 
 <Layout title={"CV - " + myName}>
@@ -501,6 +513,25 @@ const professionalDevelopment = [
               [Link]
             </a>
             <p class="text-gray-500 dark:text-gray-400">{dev.issuer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">
+        Volunteering
+      </h2>
+      <div class="space-y-4">
+        {volunteering.map(vol => (
+          <div>
+            <h3 class="text-xl font-semibold">{vol.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              <a href={vol.link} class="hover:underline">
+                {vol.organization}
+              </a>
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">{vol.period}</p>
           </div>
         ))}
       </div>
