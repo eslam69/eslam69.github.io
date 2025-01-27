@@ -1,15 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { myName } from './index.astro';
+export const defaultCover = '/images/wavyMountain.jpg';
 
-const defaultCover = '/images/default.png';
-
-const processProject = (project) => ({
-  ...project,
-  image: project.image || defaultCover,
-  category: project.category || 'Other'
-});
-
+// const processProject = (project) => ({
+//   ...project,
+//   image: project.image || defaultCover,
+//   category: project.category || 'Other'
+// });
 export const projects = [
   {
     title: 'IoT Web-based Dashboard',
@@ -17,7 +15,7 @@ export const projects = [
     description: 'Designed and developed a user interface connected to a data acquisition mobile robot through ROS communication. The interface facilitated real-time control, sensory data plotting, space-time sensory data mapping using heatmaps, and incorporated features for comprehensive historical data analysis.',
     demoLink: 'https://youtu.be/Cj7dUl67Fww?si=yy_5OJI-ni-1Tfc1',
     year: '2024',
-    image: 'https://raw.githubusercontent.com/eslam69/ROS-Dashboard/main/demo.gif' || defaultCover,
+    image: defaultCover,
     category: 'Web Development',
   },
   {
@@ -26,7 +24,7 @@ export const projects = [
     description: 'Implemented an advanced Encoder-Decoder model for precise monocular depth estimation using RGB frames. Achieved notable efficiency improvements compared to existing methods.',
     year: '2023',
     image: defaultCover,
-    category: 'Machine Learning',
+    category: 'Computer Vision',
   },
   {
     title: 'Securing CAN Bus using CNNs and Ensemble Methods',
@@ -226,7 +224,7 @@ export const projects = [
     image: defaultCover,
     category: 'Embedded Systems',
   },
-].map(processProject);
+]
 
 const education = [
   {
@@ -245,7 +243,8 @@ const education = [
     location: 'Cairo, Egypt',
     year: '2016 - 2021',
     description: [
-      'Relevant coursework: Data structures & Algorithms, Database Design, Computer Architecture, Software Engineering, Computer Networking, Image processing, Computer Vision, IoT, Probability & Statistics, Machine Learning, Linear Algebra, Calculus, DSP, Embedded Systems, Computer Graphics, Control, Microelectronics',
+      'CGPA: 3.44/4 (Very Good), Graduation Project Grade: Excellent',
+      'Relevant coursework: Data structures & Algorithms, Database Design, Computer Architecture, Software Engineering, Computer Networking, Image processing, Computer Vision, IoT, Probability & Statistics, Machine Learning, Linear Algebra, Calculus, DSP, Embedded Systems, Computer Graphics, Control, Microelectronics.',
     ],
   },
 ];
@@ -534,4 +533,3 @@ const professionalDevelopment = [
     </section>
   </div>
 </Layout>
-
