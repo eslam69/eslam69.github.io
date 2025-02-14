@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 export const myName = "Eslam Khaled";
+export const WebsiteTitle = "Pareto Optimal Tech";
 const posts = await getCollection('blog');
 const featuredPosts = posts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
