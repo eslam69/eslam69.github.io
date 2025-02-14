@@ -14,6 +14,13 @@ export async function GET(context) {
       description: post.data.description,
       link: `/blog/${post.slug}/`,
     })),
-    customData: `<language>en-us</language>`,
+    customData: `
+      <language>en-us</language>
+      <image>
+        <url>${context.site}/favicon_io/android-chrome-512x512.png</url>
+        <title>${myName}'s Blog</title>
+        <link>${context.site}</link>
+      </image>
+    `,
   });
 }
